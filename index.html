@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<img src="Tortas.gpeg.jpg" alt="TORTAS">
+    <title>TORTAS</title>
+</head>
+<body onload="calcular() " class="text-center">
+    
+    <body onload="calcular()" class="text-center">
+    
+        <h1 class="bg-dark text-white">TORTAS</h1>
+        <div class="card m-5">
+        <h1 class=" bg-danger text-white">MENÚ</h1>
+        <class="form-control name="producto" onchange="calcular()" id="producto">
+            <h3>NORMAL $35</h3>
+                <label><input type="checkbox" id="Salchicha"  onchange="calcular()" >SALCHICHA</label><br>
+                <label><input type="checkbox" id="Jamon"  onchange="calcular()" >JAMON</label><br>
+                <label><input type="checkbox" id="Chuleta"  onchange="calcular()" >CHULETA</label><br>
+                <label><input type="checkbox" id="Huevo" onchange="calcular()" >HUEVO</label><br>
+            <h3>COMBINADAS $45</h3>
+             <label><input type="checkbox" id="Veronica" onchange="calcular()" >VERONICA</label><br>
+             <label><input type="checkbox" id="Pachuqueña"  onchange="calcular()" >PACHAQUEÑA</label><br>
+             <label><input type="checkbox" id="Texana"  onchange="calcular()" >TEXANA</label><br>
+             <label><input type="checkbox" id="Toluqueña"  onchange="calcular()" >TULUQUEÑA</label><br>
+            <h3>ESPECIAL $60</h3>
+             <label><input type="checkbox" id="Cubana"  onchange="calcular()" >CUBANA</label><br>
+            </select>
+        
+    </select>
+   
+    
+    <div class="m-2 ">
+        <h1 class=" bg-dark text-white ">Extras:</h1>
+    <input type="checkbox" name="m" id="Refresco" class="form-check-imput " onchange="calcular()" >Refresco $20
+    <br>
+    
+    </div>
+
+
+    <div class="m-2 ">
+        <h1 class=" bg-dark text-white ">Servicio a Domicilio:</h1>
+    <input type="checkbox" name="I" id="ServicioaDomicilio" class="form-check-imput " onchange="calcular()" >ServicioaDomicilio $50
+    <br>
+    
+    </div>
+
+
+        <div class="bg-dark text-white h2 "id="total">Precio Total: $ 0.00 MXN</div>
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>
